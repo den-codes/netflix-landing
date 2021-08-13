@@ -1,0 +1,354 @@
+* {
+box-sizing: border-box;
+margin: 0;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #navbar {
+  display:flex;
+  flex-direction: row;
+  }
+  #lang, #log-in {
+  height: 35px;
+  font-size: 16px;
+  margin-left: 15px;
+  margin-top: 30px;
+  }
+  /*lANGUAGE DROPDOWN*/
+  #lang{
+  width: 100px;
+
+  background:none;
+  color: white;
+  margin-left: 70%;
+  }
+  #log-in{
+  width: 130px;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  background-color: red;
+  border: none;
+  }
+  #home{
+  position: relative;
+  width: 100vw;
+  height: 90vh;
+
+  z-index: 2;
+  }
+  /*BACKGROUND IMAGE*/
+  #bg-image {
+  width: 100vw;
+  height: 90vh;
+  position: absolute;
+
+  background: linear-gradient(to bottom, #000, transparent);
+  background-image: url('../img/netflix-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+/*FLITERED BACKGROUND*/
+  filter: blur(0.5px);
+  filter:brightness(40%);
+
+  z-index:-1;
+  }
+  #logo{
+  width: 129px;
+  height: 58px;
+  margin-left: 50%;
+  margin-top: 10px;
+  }
+  h1{
+  font-weight: bold;
+  font-size: 50px;
+  color: white;
+  margin-top: 10px;
+  }
+  h3{
+  font-size: 26px;
+  color: white;
+  margin-top: 10px;
+  font-weight: lighter;
+  }
+  h4{
+  font-size: 19.2;
+  color: white;
+  margin-top: 20px;
+  font-weight: lighter;
+  }
+  #mainheader{
+text-align: center;
+margin: 10% 28% 0px 28%;
+color: white;
+  }
+#subheader, #subheader2{
+text-align: center;
+margin-bottom: 18px;
+margin-top: 12px;
+}
+#submit{
+margin: 10px 25% 0px 25%;
+justify-content: center;
+display: inline-flex;
+}
+#email{
+  width: 480px;
+  height:60px;
+  font-size: 20px;
+  margin-bottom: 80px;
+}
+#button2{
+width: 180px;
+height: 60px;
+background-color: red;
+color: white;
+border: none;
+font-size: 25px;
+}
+#sections{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 100vw;
+  height: 65vh;
+}
+img{
+  position: relative;
+  align-content: center;
+  width: 500px;
+  margin-top: 15%;
+  margin-left: 20%;
+}
+#img-right{
+  margin-left: -30% ;
+}
+#title-left, #subheader-left{
+  text-align: left;
+  margin: 150px 30% -150px 15%;
+  }
+  #title-right, #subheader-right{
+  text-align: left;
+  margin: 150px 18% -150px 20%;
+  }
+#faq{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.faq {
+width: 100vw;
+height: auto;
+}
+.accordion{
+  background-color: #303030;
+  color:white;
+  cursor: pointer;
+  padding: 25px;
+  width: 810px;
+  margin: 7px 0px 7px 0px;
+
+
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 24px;
+
+  transition: 0.4s;
+  display: flex;
+  flex-direction: row;
+
+  transform: translate(35%);
+}
+.accordion::before{
+  position: absolute;
+  content: "+";
+  right: 35px;
+  top: 25px;
+}
+.accordion.active::before{
+  content: "-";
+}
+.panel {
+  display: none;
+  background-color: #303030;
+  overflow: hidden;
+  font-size: 24px;
+  color:white;
+  width: 810px;
+
+  padding: 25px;
+  margin: 7px 0px 7px 0px;
+  transform: translate(35%);
+
+}
+.divider{
+  width: 100%;
+  height: 8px;
+  background-color: #303030;
+}
+/*#img-left{
+margin-left: 18%;
+}*/
+.grid-container{
+  margin-top: -120px;
+  display:grid;
+  grid-template-columns: auto auto auto auto;
+  padding : 12% 20% 10% 16%;
+}
+ul{
+  padding: 2% 2% 2% 2%;
+  line-height: 2.2;
+  list-style: none;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+  font-size: 13px;
+  color: grey;
+}
+.lang{
+  margin: -10% 50% 5% 15%;
+  width: 100px;
+  height: 80px;
+}
+#footer{
+position: relative;
+
+}
+#footertxt{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: grey;
+  margin-top: 100px;
+  margin-left: 200px;
+}
+/*FOR SMALL DEVICES*/
+@media only screen and (max-width: 750px) { 
+nav{
+  display:flex;
+  flex-direction: row;
+}
+#lang, #log-in {
+  height: 25px;
+  font-size: 15px;
+  margin-left: 10px;
+  margin-top: 5%;
+}
+#lang{
+  width: 80px;
+  margin-left: 45%;
+}
+#log-in{
+  width: 100px;
+  border-radius: 2px;    
+}
+#logo{
+  width: 74px;
+  height: 39px;
+  margin-left: 45%;
+  margin-top: 10%;
+}
+h1{
+  font-size: 30px;
+}
+h3{
+  font-size: 18px;
+}
+h4{
+  font-size: 17px;
+} 
+#submit{
+  margin: 30px 15% 30px 15%;
+  justify-content: center;
+  display: flow-root;
+}
+#email{
+  width: 80vw;
+  height:50px;
+  font-size: 15px;
+  transform: translate(-5%); 
+  margin-bottom: 8px;
+}
+#button2{
+  width: 100px;
+  height: 50px;
+  margin: 5% 30% 1% 30%;
+  font-size: 15px;
+}
+#mainheader{
+  margin: 20% 10% 0px 10%;
+}
+#sections {
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+
+  height: 55vh;
+}
+
+.section{
+  display:flex;
+  flex-direction: column;
+
+  justify-items: center;
+}
+#right-section, #left-section{
+  margin-top: 35% 0 10px 0;
+}
+img{
+  width:300px;
+  margin: -15% 0px 0px 0px;
+}
+#img-right{
+  margin: 5% 15% 10% 15%;
+}
+#subheader-right, #title-right{
+  margin: 0 10px 0 10px;
+  text-align: center;
+}
+#subheader-left, #title-left{
+  text-align: center;
+  margin: 0 10px 0 10px;
+}
+.accordion{
+  width: 100vw;
+  height: 8vh;
+  transform: translate(0%);
+  position: relative;
+  
+  margin-top: 2%;
+}
+#bg-image, #home{
+  height: 76vh;
+}
+#faq{
+margin: 10% 0 4% 0;
+}
+.panel{
+  transform: translate(0%);
+  margin: 7px 0px 7px 0px;
+}
+.accordion, p{
+  font-size: 18px;
+}
+#footertxt{
+  margin-top: 15px;
+  margin-left: 20px;
+}
+.grid-container{
+  margin-top: -20px;
+  display:grid;
+  grid-template-columns: auto auto;
+  padding : 10% 16% 10% 16%;
+}
+#subheader2{
+  margin: 8px 30px 15px 30px;
+}
+}
