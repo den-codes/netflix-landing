@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a, label{
+    text-decoration: none;
+    color: #808080;
+}
+h5, h6{
+    color: #808080;
+    font-weight: 100;
+}
+#logo{
+    width: 142px;
+    height: 70px;
+    margin-left: 2%;
+    margin-top: 5px;
+}
+.home{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  
+    z-index: 1;
+}
+  /*BACKGROUND IMAGE*/
+#bg-image {
+    width: 100vw;
+    height: 140vh;
+    position: absolute;
+  
+    background: linear-gradient(to bottom, #000, transparent);
+    background-image: url('../img/netflix-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  /*FILTERED BACKGROUND*/
+    filter: blur(0.5px);
+    filter:brightness(40%);
+
+    z-index: -2;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    background-color: rgb(0, 0, 0,.7);
+
+    width: 450px;
+    height: 85vh;
+}
+header{
+    color: #FFFFFF;
+
+    font-size: 32px;
+    font-weight: 600;
+    text-align: left;
+    margin: -85px 20px 20px 0px;
+}
+a, label{
+    font-size: 12px;
+}
+form input::placeholder{
+    font-size: 17px;
+    color: #808080;
+    padding-left: 15px;
+}
+#password, #email, .submit{
+    width: 25vw;
+    height: 50px;
+    margin: 10px 10px 10px 0px;
+    border-radius: 5px;
+    border: none;
+}
+#password, #email{
+    background-color: rgb(34, 34, 34);
+}
+.submit{
+    background-color: rgb(207, 25, 25);
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 600;
+}
+.links{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    
+    font-size: 16px;
+}
+#help{
+    margin-left: 15px;
+}
+#signup{
+    font-size: 18px;
+    font-weight: 200;
+    color: #FFFFFF;
+}
+.txt{
+    font-size: 22px;
+    margin: 55px 55px 10px 55px;
+}
+.txt2{
+    font-size: 14px;
+    margin: 10px 55px 0px 55px;
+}
+#lang{
+    width: 100px;
+    height: 35px;
+    font-size: 16px;
+    margin-left: 15px;
+    margin-top: 30px;
+    background-color: rgb(0, 0, 0);
+
+    color: white;
+}
+.lang{
+    background: none;
+
+}
+.divider{
+    display: block;
+}
+#footer{
+    position: relative;
+    z-index: 3;
+    background-color: rgb(0, 0, 0,.7);
+
+    height: 40%;
+}
+#footertxt{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #808080;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+/*--------------FOR SMALL DEVICES--------------- */
+@media only screen and (max-width: 850px) { 
+#bg-image{
+    background: none;
+}
+nav{
+    display:flex;
+    flex-direction: row;
+}
+#logo{
+    width: 78px;
+    height: 35px;
+    margin-left: 15%;
+    margin-top: 10%;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: none;
+}
+header{
+    font-size: 32px;
+    font-weight: 600;
+    text-align: left;
+    margin: 25px 0px 20px 0px;
+}
+a, label{
+    font-size: 12px;
+}
+#password, #email, .submit{
+    width: 90vw;
+    height: 50px;
+    margin: 10px 10px 10px 0px;
+    border-radius: 5px;
+    border: none;
+}
+#password, #email{
+    background-color: rgb(34, 34, 34);
+}
+.submit{
+    background-color: rgb(207, 25, 25);
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 600;
+}
+.links{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45vw;
+    
+    font-size: 16px;
+}
+.signup{
+    display:flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-bottom: 25%;;
+}
+.txt{
+    font-size: 22px;
+    margin: 15px;
+}
+#signup{
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+.txt2{
+    margin: 12px;
+}
+#link{
+    color: rgb(31, 31, 236);
+}
+#footertxt{
+    margin-top: 15px;
+    margin-left: 40px;
+}
+.divider{
+    width: 100%;
+    height: 3px;
+    background-color: #303030;
+}
+.grid-container{
+    display:grid;
+    grid-template-columns: auto auto;
+}
+ ul {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#lang{
+    width: 100px;
+    height: 35px;
+    font-size: 15px;
+    margin: 5% 0 10% 8%;
+}
+
+}
