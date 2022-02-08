@@ -36,6 +36,7 @@ html, body {
 }
 #log-in{
   width: 130px;
+  cursor: pointer;
   border-radius: 5px;
   color: var(--white);
   background-color: var(--red);
@@ -99,9 +100,9 @@ h4{
   margin-top: 12px;
 }
 #submit{
-  margin: 10px 25% 0px 25%;
+  display:flex;
+  margin: auto;
   justify-content: center;
-  display: inline-flex;
 }
 #email{
   width: 480px;
@@ -114,6 +115,7 @@ h4{
   height: 60px;
   background-color: var(--red);
   color: var(--white);
+  cursor: pointer;
   border: none;
   font-size: 25px;
 }
@@ -135,14 +137,28 @@ img{
 #img-right{
   margin-left: -30% ;
 }
-#title-left, #subheader-left{
+#left-section{
+  display: flex;
+  flex-direction:column;
+  justify-self: center;
+  max-width: 40%;
+  margin: auto;
+}
+#right-section{
+  display: flex;
+  flex-direction:column;
+  justify-self: center;
+  max-width: 40%;
+  margin: auto;
+}
+/*#title-left, #subheader-left{
   text-align: left;
   margin: 150px 30% -150px 15%;
 }
 #title-right, #subheader-right{
   text-align: left;
   margin: 150px 18% -150px 20%;
-}
+}*/
 #faq{
   margin-top: 2%;
   margin-bottom: 2%;
